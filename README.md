@@ -8,7 +8,7 @@ Configuration management is done with the help of https://www.npmjs.com/package/
 
 Another config file `.env` is typically used in the local development environment.
 
-For the application deployments, the best practice is to specify the environment variables (related to all the config properties) in your deployment system. The config bootstrapping logic here works in a way that if the curtain environment variable is specified, it will be used as the config property avoiding the respective property in `.env` file.
+For the application deployments, the best practice is to specify the environment variables (related to all the config properties) in your deployment system. The config bootstrapping logic here works in a way that if the certain environment variable is specified, it will be used as the config property avoiding the respective property in `.env` file.
 
 
 ### How to install locally
@@ -28,4 +28,4 @@ For the application deployments, the best practice is to specify the environment
   * all tests: `npm test`
 
 ### How to deploy
-At the moment, not implemented, but the project can be easily converted into a `docker` image and then be deployed on any of the modern deployment infrastructure services like AWS ECS, AWS Beanstalk, Kubernetes Mesos, etc.
+At the moment, not implemented, but the project can be easily converted into a `docker` image and then be deployed on any of the modern deployment infrastructure services like AWS ECS, AWS Beanstalk, Kubernetes, Mesos, etc.
