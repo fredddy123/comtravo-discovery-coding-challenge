@@ -1,4 +1,5 @@
 'use strict'
+/* eslint-env jest */
 
 const { mergeFlightsLists } = require('../../../../../services/discovery/utils.js')
 
