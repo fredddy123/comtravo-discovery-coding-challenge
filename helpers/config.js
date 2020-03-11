@@ -13,6 +13,7 @@ dotenv.config({
 const validateConfig = (new Ajv()).compile({
   type: 'object',
   required: [
+    'NODE_ENV',
     'SERVICE_NAME',
     'APP_PORT',
     'LOG_LEVEL',
@@ -25,6 +26,7 @@ const validateConfig = (new Ajv()).compile({
     'RESPONSE_TIMEOUT'
   ],
   properties: {
+    NODE_ENV: { enum: ['test', 'dev', 'stage', 'prod'] },
     SERVICE_NAME: { type: 'string' },
     APP_PORT: { type: 'number' },
     LOG_LEVEL: { type: 'string' },
